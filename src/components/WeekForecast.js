@@ -106,8 +106,6 @@ const WeekForecast = () => {
     return groups;
   }, {});
 
-  console.log(groupDates);
-
   const groupArrays = Object.keys(groupDates).map((date) => {
     return {
       date,
@@ -119,9 +117,7 @@ const WeekForecast = () => {
     if (active === index) {
       setActive(-1);
     }
-
     setActive(index);
-    console.log("click", active);
   };
 
   return (
